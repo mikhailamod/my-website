@@ -12,13 +12,20 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+	<header>
 	<div class="navbar-fixed">
 	<nav class="light-blue darken-3" role="navigation">
-		<div class="nav-wrapper container">
+		<div class="nav-wrapper container ">
 		<a id="logo-container" href="#" class="brand-logo white-text">Mikhail Amod</a>
 			<ul class="right hide-on-med-and-down">
-				<li><a class="white-text" href="https://github.com/mikhailamod">GitHub</a></li>
-				<li><a class="white-text" href="https://www.linkedin.com/in/mikhail-amod-517666127/">LinkedIn</a></li>
+				<li><a class="white-text valign-wrapper" href="https://github.com/mikhailamod">
+					<img src="icon_github.png" alt="" class="circle responsive-img ">
+					&nbsp;GitHub</a>
+				</li>
+				<li><a class="white-text valign-wrapper" href="https://www.linkedin.com/in/mikhail-amod-517666127/">
+					<img src="icon_linkedin.png" alt="" class="circle responsive-img ">
+					&nbsp;LinkedIn</a>
+				</li>
 			</ul>
 			<ul id="nav-mobile" class="sidenav">
 				<li><a href="https://github.com/mikhailamod">GitHub</a></li>
@@ -28,7 +35,9 @@
 		</div>
 	</nav>
 	</div>
+	</header>
 
+	<body>
 	<div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -38,7 +47,7 @@
           <h5 class="header col s12 light black-text">Third year Computer Science student at the University of Cape Town</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Projects</a>
+          <button id="btn_projects" type="submit" onclick="scroll();" class="btn-large waves-effect waves-light teal lighten-1">Projects</button>
         </div>
         <br><br>
 
@@ -87,9 +96,64 @@
 		</div>
 	</div>
 
+	<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="header col s12 white-text">My Projects</h3>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+   <div id="prj_container" class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>What I've done</h4>
+          <p class="left-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </body>
+
+	<footer class="page-footer  light-blue darken-3">
+		<div class="container">
+			<div class="row">
+			  <div class="col l6 s12">
+			    <h5 class="white-text">More Info</h5>
+			    <p class="grey-text text-lighten-4">This website was made with the MaterializeCSS framework.</p>
+			  </div>
+			  <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Contact Details</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Email: mickeyamod@gmail.com</a></li>
+                </ul>
+              </div>
+			</div>
+			</div>
+			<div class="footer-copyright">
+			<div class="container">
+			© 2018
+			<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+			</div>
+		</div>
+	</footer>
+
 	<!--  Scripts-->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/init.js"></script>
+	<script>
+		function scroll() {
+			console.log("Hi");
+	   		document.getElementById("prj_container").scrollIntoView();
+		}
+	</script>
 </body>
 </html>
