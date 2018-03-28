@@ -19,15 +19,24 @@ p {
   color: #26a69a;
 }
 
+/*
+.parallax background_mountain {
+    @media #{$small-and-down} { max-width: 200%; }
+    @media #{$medium-and-up} { width: 0%; }
+}
+*/
+
+
 .parallax-container {
-  min-height: 350px;
-  line-height: 0;
-  height: auto;
+  min-height: 400px;
+  line-height: 10%;
+  height: 50%;
   color: rgba(255,255,255,.9);
 }
   .parallax-container .section {
     width: 100%;
   }
+
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
