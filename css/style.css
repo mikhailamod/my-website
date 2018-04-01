@@ -20,11 +20,11 @@ p {
 }
 
 /*
-.parallax background_mountain {
+.parallax {
     @media #{$small-and-down} { max-width: 200%; }
-    @media #{$medium-and-up} { width: 0%; }
-}
-*/
+    @media #{$medium-and-up} { width: 100%; }
+}*/
+
 
 
 .parallax-container {
@@ -32,6 +32,8 @@ p {
   line-height: 10%;
   height: 50%;
   color: rgba(255,255,255,.9);
+  background-position: 100% 250px;
+  background-size: 50%;
 }
   .parallax-container .section {
     width: 100%;
